@@ -31,6 +31,7 @@ module Geogle
         origin:         origin,
         destination:    destination,
         mode:           params[:mode] || "driving",
+        departure_time: params[:departure_time],
         waypoints:      waypoints.join("|"),
         sensor: @sensor,
         language: @language
